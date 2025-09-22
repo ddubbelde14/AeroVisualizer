@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+*.env
+venv/
+env/
+.idea/
+.vscode/
+
+# Node / React
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
