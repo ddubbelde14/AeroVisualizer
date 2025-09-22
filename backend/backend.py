@@ -11,7 +11,7 @@ app = FastAPI()
 # Allow React frontend to call API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://devindubbelde.com"],  # or your domain for tighter security
+    allow_origins=["*"],  # or your domain for tighter security
     allow_methods=["*"],
     allow_headers=["*"],
 )
