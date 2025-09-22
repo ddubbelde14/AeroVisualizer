@@ -8,7 +8,7 @@ function Ballistics() {
   const [distance, setDistance] = useState(null);
 
   const fetchBallistics = () => {
-    fetch(`http://192.168.0.17:8000/ballistics?v0=${v0}&angle=${angle}&h0=${h0}`)
+    fetch(`https://aerovisualizer.onrender.com/ballistics?v0=${v0}&angle=${angle}&h0=${h0}`)
       .then(res => res.json())
       .then(data => {
         setImage(data.image);

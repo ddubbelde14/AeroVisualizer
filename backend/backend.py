@@ -4,11 +4,9 @@ matplotlib.use("Agg")
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from solvers.ballistics import simulate_ballistics
-from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-app.mount("/", StaticFiles(directory="frontend/build", html=True), name="frontend")
 
 # Allow React frontend to call API
 app.add_middleware(
