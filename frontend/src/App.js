@@ -10,6 +10,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/ballistics" element={<Ballistics />} />
       </Routes>
+      <title>AeroSolver</title>
     </Router>
   );
 }

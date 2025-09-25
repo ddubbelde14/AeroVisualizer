@@ -35,8 +35,8 @@ def simulate_ballistics(v0, angle_deg, h0, g=9.81):
     plt.ylabel("y (m)")
     plt.title("Projectile Motion")
     plt.grid(True)
-    plt.xlim(0,200)
-    plt.ylim(0,100)
+    #plt.xlim(0,200)
+    #plt.ylim(0,100)
     
     # Save to a PNG in memory
     buf = io.BytesIO()

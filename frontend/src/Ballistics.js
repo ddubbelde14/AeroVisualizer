@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+const BALLISTICS_API_URL = process.env.REACT_APP_BALLISTICS_API_URL;
+
 function Ballistics() {
   const [v0, setV0] = useState(20);
   const [angle, setAngle] = useState(45);
@@ -8,7 +10,7 @@ function Ballistics() {
   const [distance, setDistance] = useState(null);
 
   const fetchBallistics = () => {
-    fetch(`https://aerovisualizer.onrender.com/ballistics?v0=${v0}&angle=${angle}&h0=${h0}`)
+    fetch(`${BALLISTICS_API_URL}/ballistics?v0=${v0}&angle=${angle}&h0=${h0}`)
       .then(res => res.json())
       .then(data => {
         setImage(data.image);
